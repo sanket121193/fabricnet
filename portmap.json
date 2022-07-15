@@ -1,0 +1,23 @@
+{
+  "couch0-0": "20117:5984",
+  "couch1-0": "20118:5984",
+  "couch2-0": "20119:5984",
+  "couch3-0": "20120:5984",
+  "couch4-0": "20121:5984",
+  "couch5-0": "20122:5984",
+  "eorderer0.example.com": "20235:7050",
+  "eorderer1.example.com": "20236:7050",
+  "eorderer2.example.com": "20237:7050",
+  "peer0.org1.example.com-0": "20001:7051",
+  "peer0.org1.example.com-1": "20002:7053",
+  "peer0.org2.example.com-0": "20005:7051",
+  "peer0.org2.example.com-1": "20006:7053",
+  "peer0.org3.example.com-0": "20009:7051",
+  "peer0.org3.example.com-1": "20010:7053",
+  "peer1.org1.example.com-0": "20003:7051",
+  "peer1.org1.example.com-1": "20004:7053",
+  "peer1.org2.example.com-0": "20007:7051",
+  "peer1.org2.example.com-1": "20008:7053",
+  "peer1.org3.example.com-0": "20011:7051",
+  "peer1.org3.example.com-1": "20012:7053"
+}

@@ -1,0 +1,94 @@
+{
+    "fabricVersion": "1.0.0",
+    "orderers": {
+        "name": "Orderer",
+        "mspID": "OrdererMSP",
+        "domain": "example.com",
+        "ordererHostname": "orderer",
+        "SANS": "localhost",
+        "caCountry": "IN",
+        "caProvince": "Delhi-NCR",
+        "caLocality": "Delhi",
+        "caOrganizationalUnit": "IT",
+        "caStreetAddress": "1, M.G ROAD",
+        "caPostalCode": "100001",
+        "type": "raft",
+        "haCount": 3
+    },
+    "addCA": "false",
+    "startPort": 20000,
+    "orgs": [
+        {
+            "name": "Org1",
+            "domain": "org1.example.com",
+            "mspID": "Org1MSP",
+            "SANS": "localhost",
+            "caCountry": "IN",
+            "caProvince": "West Bengal",
+            "caLocality": "Kolkata",
+            "caOrganizationalUnit": "IT",
+            "caStreetAddress": "1, M.G ROAD",
+            "caPostalCode": "700001",
+            "peerCount": 2,
+            "userCount": 2
+        },
+        {
+            "name": "Org2",
+            "domain": "org2.example.com",
+            "mspID": "Org2MSP",
+            "SANS": "localhost",
+            "caCountry": "IN",
+            "caProvince": "Karnataka",
+            "caLocality": "Bangaluru",
+            "caOrganizationalUnit": "IT",
+            "caStreetAddress": "1, M.G ROAD",
+            "caPostalCode": "560001",
+            "peerCount": 2,
+            "userCount": 2
+        },
+        {
+            "name": "Org3",
+            "domain": "org3.example.com",
+            "mspID": "Org3MSP",
+            "SANS": "localhost",
+            "caCountry": "IN",
+            "caProvince": "Delhi-NCR",
+            "caLocality": "Delhi",
+            "caOrganizationalUnit": "IT",
+            "caStreetAddress": "1, M.G ROAD",
+            "caPostalCode": "100001",
+            "peerCount": 2,
+            "userCount": 2
+        }
+    ],
+    "consortium": "SampleConsortium",
+    "channels": [
+        {
+            "channelName": "mychannel",
+            "orgs": [
+                "Org1",
+                "Org2"
+            ]
+        },
+        {
+            "channelName": "All",
+            "orgs": [
+                "Org1",
+                "Org2",
+                "Org3"
+            ]
+        }
+    ],
+    "chaincodes": [
+        {
+            "channelName": "mychannel",
+            "ccid": "bt",
+            "version": "1.0",
+            "src": "github.com/bt",
+            "participants": [
+                "Org1",
+                "Org2"
+            ]
+        }
+    ]
+}
